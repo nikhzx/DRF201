@@ -1,6 +1,6 @@
 from requests import Session
 from .models import Student
-from.serializers import StudentSerializer, serializers
+from .serializers import StudentSerializer, serializers
 from rest_framework import viewsets
 from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny, \
