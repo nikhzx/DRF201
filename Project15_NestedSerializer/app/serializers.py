@@ -4,7 +4,6 @@ from rest_framework import serializers
 class DevicesSerializer(serializers.ModelSerializer):
     # company = serializers.PrimaryKeyRelatedField(queryset=Company.objects.all())
     company = serializers.SlugRelatedField(queryset=Company.objects.all(), slug_field='country')
-
     class Meta:
         model = Device
         fields = ['id', 'name', 'type', 'company', 'price']
